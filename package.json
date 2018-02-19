@@ -5,6 +5,7 @@
   "description": "React Starter",
   "repository": "exeto/react-starter",
   "author": "Timofey Dergachev <t@exeto.me> (https://exeto.me/)",
+  "license": "MIT",
   "scripts": {
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
