@@ -7,6 +7,8 @@ const CaseSensitivePathsPlugin = require('case-sensitive-paths-webpack-plugin');
 const paths = require('./paths');
 
 module.exports = {
+  mode: 'development',
+
   entry: [
     'react-dev-utils/webpackHotDevClient',
     'react-hot-loader/patch',
@@ -15,7 +17,7 @@ module.exports = {
 
   output: {
     path: paths.appBuild,
-    filename: 'static/js/bundle.js',
+    filename: 'static/js/[name].js',
     publicPath: paths.publicUrl,
     pathinfo: true,
   },
@@ -37,7 +39,6 @@ module.exports = {
   },
 
   plugins: [
-    new webpack.NamedModulesPlugin(),
     new webpack.HotModuleReplacementPlugin(),
     new CaseSensitivePathsPlugin(),
     new HtmlWebpackPlugin({

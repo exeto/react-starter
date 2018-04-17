@@ -1,18 +1,13 @@
 'use strict';
 
-const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
 
 const paths = require('./paths');
 
 module.exports = {
+  mode: 'production',
   bail: true,
-
-  entry: {
-    main: [paths.appIndexJs],
-    vendor: ['react', 'react-dom'],
-  },
+  entry: paths.appIndexJs,
 
   output: {
     path: paths.appBuild,
@@ -37,12 +32,6 @@ module.exports = {
   },
 
   plugins: [
-    new UglifyJSPlugin(),
-    new webpack.DefinePlugin({
-      'process.env': {
-        NODE_ENV: JSON.stringify('production'),
-      },
-    }),
     new HtmlWebpackPlugin({
       inject: true,
       template: paths.appHtml,
@@ -59,9 +48,9 @@ module.exports = {
         minifyURLs: true,
       },
     }),
-    new webpack.optimize.CommonsChunkPlugin({
-      name: 'vendor',
-      filename: 'static/js/[name].[chunkhash:8].js',
-    }),
   ],
+
+  performance: {
+    hints: false,
+  },
 };
