@@ -9,11 +9,7 @@ const paths = require('./paths');
 module.exports = {
   mode: 'development',
 
-  entry: [
-    'react-dev-utils/webpackHotDevClient',
-    'react-hot-loader/patch',
-    paths.appIndexJs,
-  ],
+  entry: ['react-dev-utils/webpackHotDevClient', paths.appIndexJs],
 
   output: {
     path: paths.appBuild,

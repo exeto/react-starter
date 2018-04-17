@@ -1,10 +1,6 @@
 import React from 'react';
-import { AppContainer } from 'react-hot-loader';
+import { hot } from 'react-hot-loader';
 
-const Root = () => (
-  <AppContainer>
-    <h1>Hello, world!</h1>
-  </AppContainer>
-);
+const Root = () => <h1>Hello, world!</h1>;
 
-export default Root;
+export default hot(module)(Root);
