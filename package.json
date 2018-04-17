@@ -4,7 +4,7 @@
   "private": true,
   "description": "React Starter",
   "repository": "exeto/react-starter",
-  "author": "Timofey Dergachev <t@exeto.me> (https://exeto.me/)",
+  "author": "Timofey Dergachev <t@exeto.me> (https://exeto.me/en)",
   "license": "MIT",
   "scripts": {
     "start": "node scripts/start.js",
@@ -16,14 +16,13 @@
       "eslint --fix",
       "git add"
     ],
-    "**/*.json": [
+    "**/*.{json,md}": [
       "prettier --write",
       "git add"
     ]
   },
   "dependencies": {
-    "babel-polyfill": "^6.26.0",
-    "babel-runtime": "^6.26.0",
+    "core-js": "^2.5.5",
     "react": "^16.2.0",
     "react-dom": "^16.2.0"
   },
@@ -31,10 +30,9 @@
     "@exeto/eslint-config": "^0.2.0",
     "@exeto/eslint-config-react": "^0.1.0",
     "babel-core": "^6.26.0",
+    "babel-eslint": "^8.2.3",
     "babel-loader": "^7.1.2",
-    "babel-plugin-transform-runtime": "^6.23.0",
-    "babel-preset-env": "^1.6.1",
-    "babel-preset-react": "^6.24.1",
+    "babel-preset-react-app": "^3.1.1",
     "case-sensitive-paths-webpack-plugin": "^2.1.1",
     "chalk": "^2.3.1",
     "eslint": "^4.18.0",
