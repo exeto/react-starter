@@ -27,8 +27,8 @@
     "react-dom": "^16.2.0"
   },
   "devDependencies": {
-    "@exeto/eslint-config": "^0.2.0",
-    "@exeto/eslint-config-react": "^0.1.0",
+    "@exeto/eslint-config": "^1.1.0",
+    "@exeto/eslint-config-react": "^1.0.0",
     "babel-core": "^6.26.0",
     "babel-eslint": "^8.2.3",
     "babel-loader": "^7.1.2",
@@ -42,7 +42,7 @@
     "fs-extra": "^5.0.0",
     "html-webpack-plugin": "^3.2.0",
     "husky": "^0.14.3",
-    "lint-staged": "^6.1.1",
+    "lint-staged": "^7.0.4",
     "prettier": "^1.10.2",
     "prop-types": "^15.6.0",
     "react-dev-utils": "^5.0.1",
