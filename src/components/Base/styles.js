@@ -7,4 +7,9 @@ export default {
     lineHeight: 1.5,
     color: '#333',
   },
+
+  link: {
+    color: '#333',
+    textDecoration: 'none',
+  },
 };

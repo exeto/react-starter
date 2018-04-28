@@ -5,4 +5,13 @@ export default {
       paddingBottom: 8,
     },
   },
+
+  link: {
+    textDecoration: 'none',
+    color: '#333',
+
+    '&:hover': {
+      textDecoration: 'underline',
+    },
+  },
 };

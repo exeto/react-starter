@@ -3,11 +3,11 @@ import { hot } from 'react-hot-loader';
 import PropTypes from 'prop-types';
 import { Provider } from 'react-redux';
 
-import List from '@/components/List';
+import Router from '@/pages/Router';
 
 const Root = ({ store }) => (
   <Provider store={store}>
-    <List />
+    <Router />
   </Provider>
 );
 

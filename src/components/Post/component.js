@@ -1,7 +1,10 @@
 import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
+import Link from 'redux-first-router-link';
 
-class Item extends PureComponent {
+import { toItem } from '@/redux/router/actions';
+
+class Post extends PureComponent {
   static propTypes = {
     data: PropTypes.object.isRequired,
     classes: PropTypes.object.isRequired,
@@ -12,11 +15,16 @@ class Item extends PureComponent {
 
     return (
       <article className={classes.wrapper}>
-        <h2>{data.title}</h2>
+        <h2>
+          <Link className={classes.link} to={toItem(data.id)}>
+            {data.title}
+          </Link>
+        </h2>
+
         <p>{data.body}</p>
       </article>
     );
   }
 }
 
-export default Item;
+export default Post;

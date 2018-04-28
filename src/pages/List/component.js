@@ -1,13 +1,12 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
-import Item from './Item';
+import Post from '@/components/Post';
 
 class List extends Component {
   static propTypes = {
     items: PropTypes.array.isRequired,
     find: PropTypes.func.isRequired,
-    classes: PropTypes.object.isRequired,
   };
 
   componentDidMount() {
@@ -15,14 +14,9 @@ class List extends Component {
   }
 
   render() {
-    const { classes, items } = this.props;
+    const { items } = this.props;
 
-    return (
-      <div className={classes.wrapper}>
-        <h1>News</h1>
-        {items.map(item => <Item key={item.id} data={item} />)}
-      </div>
-    );
+    return items.map(item => <Post key={item.id} data={item} />);
   }
 }
 
