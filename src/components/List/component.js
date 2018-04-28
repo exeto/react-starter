@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
-import Item from '@/components/Item';
+import Item from './Item';
 
 class List extends Component {
   static propTypes = {
