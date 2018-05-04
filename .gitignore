@@ -17,4 +17,6 @@ package-lock.json
 .vscode/
 
 # OTHER
-build
+buildClient
+buildServer
+tmp

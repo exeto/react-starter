@@ -1,6 +1,7 @@
 'use strict';
 
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const AssetsPlugin = require('assets-webpack-plugin');
 
 const paths = require('./paths');
 
@@ -47,6 +48,10 @@ module.exports = {
         minifyCSS: true,
         minifyURLs: true,
       },
+    }),
+    new AssetsPlugin({
+      filename: 'assets.json',
+      path: './tmp',
     }),
   ],
 

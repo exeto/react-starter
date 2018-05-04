@@ -1,13 +1,17 @@
 import 'core-js/shim';
 
 import React from 'react';
-import { render } from 'react-dom';
+import { hydrate } from 'react-dom';
 import createHistory from 'history/createBrowserHistory';
 
 import createStore from './redux/createStore';
 import Root from './components/Root';
 
-const history = createHistory();
-const { store } = createStore(history, window.INITIAL_STATE);
+const preloadedState = window.__PRELOADED_STATE__;
 
-render(<Root store={store} />, document.getElementById('root'));
+delete window.__PRELOADED_STATE__;
+
+const history = createHistory();
+const { store } = createStore(history, preloadedState);
+
+hydrate(<Root store={store} />, document.getElementById('root'));

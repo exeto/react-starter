@@ -6,9 +6,11 @@ const resolveApp = relativePath => path.resolve(process.cwd(), relativePath);
 
 module.exports = {
   publicUrl: '/',
-  appBuild: resolveApp('build'),
+  appBuild: resolveApp('buildClient'),
+  serverBuild: resolveApp('buildServer'),
   appHtml: resolveApp('public/index.html'),
   appIndexJs: resolveApp('src/index.js'),
+  serverIndexJs: resolveApp('server/index.js'),
   appPackageJson: resolveApp('package.json'),
   appPublic: resolveApp('public'),
   appSrc: resolveApp('src'),
