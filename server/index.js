@@ -4,6 +4,7 @@ import views from 'koa-ejs';
 import serve from 'koa-static';
 import React from 'react';
 import { renderToString } from 'react-dom/server';
+import { JssProvider, SheetsRegistry } from 'react-jss';
 
 import Root from '@/components/Root';
 import createStore from './createStore';
@@ -27,11 +28,21 @@ app.use(async ctx => {
     return;
   }
 
+  const sheets = new SheetsRegistry();
   const store = await createStore(ctx);
-  const html = renderToString(<Root store={store} />);
+
+  const html = renderToString(
+    <JssProvider registry={sheets}>
+      <Root store={store} />
+    </JssProvider>,
+  );
+
   const preloadedState = store.getState();
 
-  await ctx.render('template', { assets, data: { html, preloadedState } });
+  await ctx.render('template', {
+    assets,
+    data: { html, styles: sheets.toString(), preloadedState },
+  });
 });
 
 app.listen(3000, err => {
