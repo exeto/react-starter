@@ -18,7 +18,7 @@ views(app, {
   cache: false,
 });
 
-app.use(serve(path.resolve(__dirname, '../public')));
+app.use(serve(path.resolve(__dirname, '../buildClient')));
 
 app.use(async ctx => {
   if (ctx.method !== 'GET') {

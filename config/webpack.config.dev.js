@@ -1,7 +1,6 @@
 'use strict';
 
 const webpack = require('webpack');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CaseSensitivePathsPlugin = require('case-sensitive-paths-webpack-plugin');
 
 const paths = require('./paths');
@@ -37,10 +36,6 @@ module.exports = {
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
     new CaseSensitivePathsPlugin(),
-    new HtmlWebpackPlugin({
-      inject: true,
-      template: paths.appHtml,
-    }),
   ],
 
   devtool: 'cheap-module-source-map',

@@ -7,7 +7,8 @@
   "author": "Timofey Dergachev <t@exeto.me> (https://exeto.me/en)",
   "license": "MIT",
   "scripts": {
-    "start": "node scripts/start.js",
+    "dev": "node scripts/dev.js",
+    "start": "node buildServer/server.bundle.js",
     "build": "rm -rf buildServer tmp && npm run build:client && npm run build:server",
     "build:client": "node scripts/build.js",
     "build:server": "webpack --progress -p --config config/webpack.config.server.js",
@@ -55,7 +56,6 @@
     "eslint-plugin-prettier": "^2.6.0",
     "eslint-plugin-react": "^7.6.1",
     "fs-extra": "^5.0.0",
-    "html-webpack-plugin": "^3.2.0",
     "husky": "^0.14.3",
     "lint-staged": "^7.0.4",
     "prettier": "^1.10.2",

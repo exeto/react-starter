@@ -8,7 +8,6 @@ module.exports = {
   publicUrl: '/',
   appBuild: resolveApp('buildClient'),
   serverBuild: resolveApp('buildServer'),
-  appHtml: resolveApp('public/index.html'),
   appIndexJs: resolveApp('src/index.js'),
   serverIndexJs: resolveApp('server/index.js'),
   appPackageJson: resolveApp('package.json'),
