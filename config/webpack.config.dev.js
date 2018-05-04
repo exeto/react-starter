@@ -2,6 +2,7 @@
 
 const webpack = require('webpack');
 const CaseSensitivePathsPlugin = require('case-sensitive-paths-webpack-plugin');
+const AssetsPlugin = require('assets-webpack-plugin');
 
 const paths = require('./paths');
 
@@ -36,6 +37,10 @@ module.exports = {
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
     new CaseSensitivePathsPlugin(),
+    new AssetsPlugin({
+      filename: 'assets.json',
+      path: './build',
+    }),
   ],
 
   devtool: 'cheap-module-source-map',

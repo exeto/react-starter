@@ -81,7 +81,10 @@ choosePort(HOST, DEFAULT_PORT)
 
     devServer.use((req, res) => {
       if (req.method === 'GET') {
-        res.render('template', { assets: require('../tmp/assets'), data: {} });
+        res.render('template', {
+          assets: require('../build/assets'),
+          data: {},
+        });
       }
     });
 

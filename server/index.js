@@ -7,7 +7,7 @@ import { renderToString } from 'react-dom/server';
 
 import Root from '@/components/Root';
 import createStore from './createStore';
-import assets from '../tmp/assets.json';
+import assets from '../build/assets.json';
 
 const app = new Koa();
 
@@ -18,7 +18,7 @@ views(app, {
   cache: false,
 });
 
-app.use(serve(path.resolve(__dirname, '../buildClient')));
+app.use(serve(path.resolve(__dirname, '../client')));
 
 app.use(async ctx => {
   if (ctx.method !== 'GET') {

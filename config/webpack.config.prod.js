@@ -34,7 +34,7 @@ module.exports = {
   plugins: [
     new AssetsPlugin({
       filename: 'assets.json',
-      path: './tmp',
+      path: './build',
     }),
   ],
 

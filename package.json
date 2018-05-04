@@ -8,8 +8,8 @@
   "license": "MIT",
   "scripts": {
     "dev": "node scripts/dev.js",
-    "start": "node buildServer/server.bundle.js",
-    "build": "rm -rf buildServer tmp && npm run build:client && npm run build:server",
+    "start": "node build/server/bundle.js",
+    "build": "rm -rf build/server assets.json && npm run build:client && npm run build:server",
     "build:client": "node scripts/build.js",
     "build:server": "webpack --progress -p --config config/webpack.config.server.js",
     "precommit": "lint-staged"

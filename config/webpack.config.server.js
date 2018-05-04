@@ -13,7 +13,7 @@ module.exports = {
 
   output: {
     path: paths.serverBuild,
-    filename: 'server.bundle.js',
+    filename: 'bundle.js',
   },
 
   optimization: {
