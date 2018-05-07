@@ -1,25 +1,23 @@
 import { createStore, applyMiddleware, compose, combineReducers } from 'redux';
 import { connectRoutes } from 'redux-first-router';
-import reduxThunk from 'redux-thunk';
+import thunk from 'redux-thunk';
+import createHistory from 'history/createBrowserHistory';
 
 import reducers from './reducers';
 import routes from './router/routes';
 
 const composeEnhancers =
   process.env.NODE_ENV === 'development'
-    ? (window && window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__) || compose
+    ? window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose
     : compose;
 
-export default (history, initialState = {}) => {
-  const { reducer, middleware, enhancer, thunk } = connectRoutes(
-    history,
-    routes,
-  );
-
+export default () => {
+  const history = createHistory();
+  const { reducer, middleware, enhancer } = connectRoutes(history, routes);
   const rootReducer = combineReducers({ ...reducers, location: reducer });
-  const middlewares = applyMiddleware(reduxThunk, middleware);
+  const middlewares = applyMiddleware(thunk, middleware);
   const enhancers = composeEnhancers(enhancer, middlewares);
-  const store = createStore(rootReducer, initialState, enhancers);
+  const store = createStore(rootReducer, enhancers);
 
   if (process.env.NODE_ENV === 'development') {
     if (module.hot) {
@@ -34,5 +32,5 @@ export default (history, initialState = {}) => {
     }
   }
 
-  return { store, thunk };
+  return store;
 };
