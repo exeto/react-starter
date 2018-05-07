@@ -1,24 +1,34 @@
 'use strict';
 
-const AssetsPlugin = require('assets-webpack-plugin');
+const nodeExternals = require('webpack-node-externals');
 
 const paths = require('./paths');
 
 module.exports = {
   mode: 'production',
   bail: true,
-  entry: paths.appIndexJs,
+  target: 'node',
+  externals: [nodeExternals({ whitelist: ['jss', 'react-jss'] })],
+  entry: paths.serverIndexJs,
 
   output: {
-    path: paths.appBuild,
-    filename: 'static/js/[name].[chunkhash:8].js',
-    publicPath: paths.publicUrl,
+    path: paths.serverBuild,
+    filename: 'bundle.js',
+  },
+
+  optimization: {
+    minimize: false,
   },
 
   resolve: {
     alias: {
       '@': paths.appSrc,
     },
+  },
+
+  node: {
+    __filename: false,
+    __dirname: false,
   },
 
   module: {
@@ -30,13 +40,6 @@ module.exports = {
       },
     ],
   },
-
-  plugins: [
-    new AssetsPlugin({
-      filename: 'assets.json',
-      path: './build',
-    }),
-  ],
 
   performance: {
     hints: false,

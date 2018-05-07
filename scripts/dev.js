@@ -32,7 +32,7 @@ const useYarn = fs.existsSync(paths.yarnLockFile);
 const isInteractive = process.stdout.isTTY;
 
 // Warn and crash if required files are missing
-if (!checkRequiredFiles([paths.appHtml, paths.appIndexJs])) {
+if (!checkRequiredFiles([paths.appIndexJs])) {
   process.exit(1);
 }
 
@@ -78,6 +78,15 @@ choosePort(HOST, DEFAULT_PORT)
     );
     const devServer = new WebpackDevServer(compiler, serverConfig);
     // Launch WebpackDevServer.
+
+    devServer.use((req, res) => {
+      if (req.method === 'GET') {
+        res.render('template', {
+          assets: require('../build/assets'),
+          data: {},
+        });
+      }
+    });
 
     devServer.listen(port, HOST, err => {
       if (err) {

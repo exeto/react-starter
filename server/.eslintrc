@@ -1,0 +1,7 @@
+{
+  "parser": "babel-eslint",
+  "extends": ["@exeto", "@exeto/react", "prettier"],
+  "rules": {
+    "no-console": "off"
+  }
+}
