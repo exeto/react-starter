@@ -17,5 +17,7 @@ const { store } = createStore(history, preloadedState);
 hydrate(<Root store={store} />, document.getElementById('root'), () => {
   const element = document.getElementById('server-side-styles');
 
-  element.parentNode.removeChild(element);
+  if (element) {
+    element.parentNode.removeChild(element);
+  }
 });
