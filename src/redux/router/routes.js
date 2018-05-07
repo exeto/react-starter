@@ -1,5 +1,5 @@
 import * as posts from '@/redux/posts/operations';
-import { findPost } from './operatons';
+import { findPost } from './operations';
 import { LIST, ITEM } from './types';
 
 export default {
