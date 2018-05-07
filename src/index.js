@@ -14,4 +14,8 @@ delete window.__PRELOADED_STATE__;
 const history = createHistory();
 const { store } = createStore(history, preloadedState);
 
-hydrate(<Root store={store} />, document.getElementById('root'));
+hydrate(<Root store={store} />, document.getElementById('root'), () => {
+  const element = document.getElementById('server-side-styles');
+
+  element.parentNode.removeChild(element);
+});

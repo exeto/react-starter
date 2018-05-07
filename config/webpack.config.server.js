@@ -8,7 +8,7 @@ module.exports = {
   mode: 'production',
   bail: true,
   target: 'node',
-  externals: [nodeExternals()],
+  externals: [nodeExternals({ whitelist: ['jss', 'react-jss'] })],
   entry: paths.serverIndexJs,
 
   output: {

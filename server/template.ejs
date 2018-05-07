@@ -5,9 +5,11 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>Document</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <style id="server-side-styles">
-      <%- data.styles %>
-    </style>
+    <%_ if (data.styles) { _%>
+      <style id="server-side-styles">
+        <%- data.styles %>
+      </style>
+    <%_ } _%>
   </head>
   <body>
     <div id="root"><%- data.html || '' %></div>
