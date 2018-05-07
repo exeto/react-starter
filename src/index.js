@@ -1,7 +1,7 @@
 import 'core-js/shim';
 
 import React from 'react';
-import { hydrate } from 'react-dom';
+import ReactDOM from 'react-dom';
 import createHistory from 'history/createBrowserHistory';
 
 import createStore from './redux/createStore';
@@ -13,8 +13,9 @@ delete window.__PRELOADED_STATE__;
 
 const history = createHistory();
 const { store } = createStore(history, preloadedState);
+const render = preloadedState ? ReactDOM.hydrate : ReactDOM.render;
 
-hydrate(<Root store={store} />, document.getElementById('root'), () => {
+render(<Root store={store} />, document.getElementById('root'), () => {
   const element = document.getElementById('server-side-styles');
 
   if (element) {

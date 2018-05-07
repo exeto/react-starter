@@ -7,11 +7,18 @@ export default async ctx => {
   const history = createHistory({ initialEntries: [ctx.path] });
   const { store, thunk } = createStore(history);
 
-  await thunk(store);
+  try {
+    await thunk(store);
+  } catch (err) {
+    const { location } = store.getState();
 
-  const { location } = store.getState();
-
-  ctx.status = location.type === NOT_FOUND ? 404 : 200;
+    if (location.type === NOT_FOUND) {
+      ctx.status = 404;
+    } else {
+      err.status = 500;
+      ctx.throw(err);
+    }
+  }
 
   return store;
 };
