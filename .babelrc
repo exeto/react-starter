@@ -1,4 +1,4 @@
 {
-  "presets": ["react-app"],
+  "presets": ["@exeto/babel-preset-react"],
   "plugins": ["react-hot-loader/babel"]
 }
