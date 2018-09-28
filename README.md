@@ -8,17 +8,17 @@
 
 ```sh
 $ git clone https://github.com/exeto/react-starter.git
-$ cd react-starter && npm i
+$ cd react-starter && yarn install
 ```
 
 ## Usage
 
 ```bash
 # Development
-$ npm start
+$ yarn start
 
 # Build
-$ npm run build
+$ yarn build
 ```
 
 ## License
