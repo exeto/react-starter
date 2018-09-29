@@ -1,9 +1,10 @@
 import { createStore, applyMiddleware, compose, combineReducers } from 'redux';
 import { connectRoutes } from 'redux-first-router';
-import thunk from 'redux-thunk';
+import createSagaMiddleware from 'redux-saga';
 import createHistory from 'history/createBrowserHistory';
 
 import reducers from './reducers';
+import rootSaga from './rootSaga';
 import routes from './router/routes';
 
 const composeEnhancers =
@@ -13,11 +14,19 @@ const composeEnhancers =
 
 export default () => {
   const history = createHistory();
-  const { reducer, middleware, enhancer } = connectRoutes(history, routes);
+  const { reducer, middleware, enhancer, initialDispatch } = connectRoutes(
+    history,
+    routes,
+    { initialDispatch: false },
+  );
   const rootReducer = combineReducers({ ...reducers, location: reducer });
-  const middlewares = applyMiddleware(thunk, middleware);
+  const sagaMiddleware = createSagaMiddleware();
+  const middlewares = applyMiddleware(sagaMiddleware, middleware);
   const enhancers = composeEnhancers(enhancer, middlewares);
   const store = createStore(rootReducer, enhancers);
+
+  sagaMiddleware.run(rootSaga);
+  initialDispatch();
 
   if (process.env.NODE_ENV === 'development') {
     if (module.hot) {

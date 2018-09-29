@@ -1,10 +1,16 @@
 import { connect } from 'react-redux';
 
 import { getPosts } from '@/redux/posts/selectors';
+import { find } from '@/redux/posts/actions';
 import List from './component';
 
 const mapStateToProps = state => ({
   items: getPosts(state),
 });
 
-export default connect(mapStateToProps)(List);
+const mapDispatchToProps = { find };
+
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps,
+)(List);
