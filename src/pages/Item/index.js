@@ -1,8 +1,8 @@
 import { connect } from 'react-redux';
 
-import { getPost } from '@/redux/posts/selectors';
-import { findRecord } from '@/redux/posts/actions';
-import { getParam } from '@/redux/router/selectors';
+import { getPost } from '@/redux/entities/posts/selectors';
+import { findRecord } from '@/redux/entities/posts/actions';
+import { getParam } from '@/redux/location/selectors';
 import Item from './component';
 
 const mapStateToProps = state => {

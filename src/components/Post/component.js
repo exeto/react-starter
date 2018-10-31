@@ -2,7 +2,7 @@ import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
 import Link from 'redux-first-router-link';
 
-import { toItem } from '@/redux/router/actions';
+import { toItem } from '@/redux/location/actions';
 
 class Post extends PureComponent {
   static propTypes = {

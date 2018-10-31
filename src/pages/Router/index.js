@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
 
-import { getType } from '@/redux/router/selectors';
+import { getType } from '@/redux/location/selectors';
 import Router from './component';
 
 const mapStateToProps = state => ({
