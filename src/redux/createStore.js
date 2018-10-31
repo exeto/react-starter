@@ -1,7 +1,6 @@
 import { createStore, applyMiddleware, compose, combineReducers } from 'redux';
 import { connectRoutes } from 'redux-first-router';
 import createSagaMiddleware from 'redux-saga';
-import createHistory from 'history/createBrowserHistory';
 
 import reducers from './reducers';
 import rootSaga from './rootSaga';
@@ -13,12 +12,11 @@ const composeEnhancers =
     : compose;
 
 export default () => {
-  const history = createHistory();
   const { reducer, middleware, enhancer, initialDispatch } = connectRoutes(
-    history,
     routes,
     { initialDispatch: false },
   );
+
   const rootReducer = combineReducers({ ...reducers, location: reducer });
   const sagaMiddleware = createSagaMiddleware();
   const middlewares = applyMiddleware(sagaMiddleware, middleware);
