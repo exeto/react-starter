@@ -30,17 +30,15 @@ export default () => {
   sagaMiddleware.run(rootSaga);
   initialDispatch();
 
-  if (process.env.NODE_ENV === 'development') {
-    if (module.hot) {
-      module.hot.accept('./reducers', () => {
-        const newRootReducer = combineReducers({
-          ...require('./reducers').default,
-          location: reducer,
-        });
-
-        store.replaceReducer(newRootReducer);
+  if (module.hot) {
+    module.hot.accept('./entities/reducer', () => {
+      const newRootReducer = combineReducers({
+        entities: require('./entities/reducer').default,
+        location: reducer,
       });
-    }
+
+      store.replaceReducer(newRootReducer);
+    });
   }
 
   return store;
