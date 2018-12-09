@@ -1,4 +1,13 @@
 {
   "parser": "babel-eslint",
-  "extends": ["@exeto", "@exeto/react", "prettier"]
+  "extends": [
+    "@exeto/eslint-config",
+    "@exeto/eslint-config-react",
+    "plugin:prettier/recommended"
+  ],
+  "settings": {
+    "react": {
+      "version": "16.6"
+    }
+  }
 }

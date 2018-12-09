@@ -16,5 +16,5 @@ package-lock.json
 .vscode/
 
 # OTHER
-.cache
-dist/
+/.cache/
+/dist/

@@ -1,8 +1,4 @@
 {
   "root": true,
-  "extends": ["@exeto/eslint-config/node", "prettier"],
-  "plugins": ["prettier"],
-  "rules": {
-    "prettier/prettier": "error"
-  }
+  "extends": ["@exeto/eslint-config/node", "plugin:prettier/recommended"]
 }
