@@ -2,7 +2,7 @@ import { connect } from 'react-redux';
 
 import { getPosts } from '@/redux/entities/posts/selectors';
 import { find } from '@/redux/entities/posts/actions';
-import List from './component';
+import List from './List';
 
 const mapStateToProps = state => ({
   items: getPosts(state),

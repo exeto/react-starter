@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import { getPost } from '@/redux/entities/posts/selectors';
 import { findRecord } from '@/redux/entities/posts/actions';
 import { getParam } from '@/redux/location/selectors';
-import Item from './component';
+import Item from './Item';
 
 const mapStateToProps = state => {
   const id = getParam(state, 'id');
