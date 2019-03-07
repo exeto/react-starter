@@ -6,7 +6,7 @@ import Post from '@/components/Post';
 const Item = ({ data, findRecord }) => {
   useEffect(() => {
     findRecord();
-  }, []);
+  }, [findRecord]);
 
   return data ? <Post data={data} /> : null;
 };

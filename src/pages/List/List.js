@@ -6,7 +6,7 @@ import Post from '@/components/Post';
 const List = ({ items, find }) => {
   useEffect(() => {
     find();
-  }, []);
+  }, [find]);
 
   return items.map(item => <Post key={item.id} data={item} />);
 };
