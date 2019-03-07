@@ -22,7 +22,7 @@ module.exports = {
     },
     'import/resolver': {
       node: null,
-      [join(process.cwd(), './scripts/import-resolver')]: null,
+      [join(process.cwd(), './utils/import-resolver')]: null,
     },
   },
 };
