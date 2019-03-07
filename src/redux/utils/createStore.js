@@ -2,9 +2,9 @@ import { createStore, applyMiddleware, compose, combineReducers } from 'redux';
 import { connectRoutes } from 'redux-first-router';
 import createSagaMiddleware from 'redux-saga';
 
-import entitiesReducer from './entities/reducer';
-import rootSaga from './rootSaga';
-import routes from './location/routes';
+import entitiesReducer from '@/redux/entities/reducer';
+import rootSaga from '@/redux/rootSaga';
+import routes from '@/redux/location/routes';
 
 const composeEnhancers =
   process.env.NODE_ENV === 'development'
@@ -31,9 +31,9 @@ export default () => {
   initialDispatch();
 
   if (module.hot) {
-    module.hot.accept('./entities/reducer', () => {
+    module.hot.accept('@/redux/entities/reducer', () => {
       const newRootReducer = combineReducers({
-        entities: require('./entities/reducer').default,
+        entities: require('@/redux/entities/reducer').default,
         location: reducer,
       });
 
