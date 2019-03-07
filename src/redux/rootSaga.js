@@ -1,9 +1,9 @@
 import { spawn } from 'redux-saga/effects';
 
-import postSaga from './entities/saga';
+import entitiesSaga from './entities/saga';
 
 function* rootSaga() {
-  yield spawn(postSaga);
+  yield spawn(entitiesSaga);
 }
 
 export default rootSaga;
