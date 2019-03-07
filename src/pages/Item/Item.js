@@ -1,27 +1,23 @@
-import React, { PureComponent } from 'react';
+import React, { useEffect } from 'react';
 import PropTypes from 'prop-types';
 
 import Post from '@/components/Post';
 
-class Item extends PureComponent {
-  static propTypes = {
-    data: PropTypes.object,
-    findRecord: PropTypes.func.isRequired,
-  };
+const Item = ({ data, findRecord }) => {
+  useEffect(() => {
+    findRecord();
+  }, []);
 
-  static defaultProps = {
-    data: null,
-  };
+  return data ? <Post data={data} /> : null;
+};
 
-  componentDidMount() {
-    this.props.findRecord();
-  }
+Item.propTypes = {
+  data: PropTypes.object,
+  findRecord: PropTypes.func.isRequired,
+};
 
-  render() {
-    const { data } = this.props;
-
-    return data ? <Post data={data} /> : null;
-  }
-}
+Item.defaultProps = {
+  data: null,
+};
 
 export default Item;
