@@ -16,13 +16,7 @@ const mapStateToProps = state => {
 
 const mapDispatchToProps = { findRecord };
 
-const mergeProps = (stateProps, dispatchProps) => ({
-  data: stateProps.data,
-  findRecord: () => dispatchProps.findRecord(stateProps.id),
-});
-
 export default connect(
   mapStateToProps,
   mapDispatchToProps,
-  mergeProps,
 )(Item);

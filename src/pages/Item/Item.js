@@ -3,15 +3,16 @@ import PropTypes from 'prop-types';
 
 import Post from '@/components/Post';
 
-const Item = ({ data, findRecord }) => {
+const Item = ({ id, data, findRecord }) => {
   useEffect(() => {
-    findRecord();
-  }, [findRecord]);
+    findRecord(id);
+  }, [id, findRecord]);
 
   return data ? <Post data={data} /> : null;
 };
 
 Item.propTypes = {
+  id: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,
   data: PropTypes.object,
   findRecord: PropTypes.func.isRequired,
 };
