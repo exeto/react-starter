@@ -18,7 +18,7 @@
     "@hot-loader/react-dom": "^16.8.5",
     "axios": "^0.18.0",
     "core-js": "^2.6.5",
-    "react": "^16.8.5",
+    "react": "^16.8.6",
     "react-jss": "^8.4.0",
     "react-redux": "^6.0.1",
     "redux": "^4.0.1",
