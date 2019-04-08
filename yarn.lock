@@ -818,10 +818,10 @@
     lodash "^4.17.11"
     to-fast-properties "^2.0.0"
 
-"@exeto/babel-preset-react@^0.2.0":
-  version "0.2.0"
-  resolved "https://registry.yarnpkg.com/@exeto/babel-preset-react/-/babel-preset-react-0.2.0.tgz#477ea6cba61bb276d538ed66c84925bdbe6aad78"
-  integrity sha512-rQvlcId0jNf93zJzdmTfERPFpU+wWZaF1xeQ6NE42JjaXiS5MnVSvuZEFxDZHZ4EKahRt/mtVdBssuXUGbdcjA==
+"@exeto/babel-preset-react@^0.2.1":
+  version "0.2.1"
+  resolved "https://registry.yarnpkg.com/@exeto/babel-preset-react/-/babel-preset-react-0.2.1.tgz#f9e9af29a7bba6864bd0e342b27c09a0cad73bd7"
+  integrity sha512-MrQMltehDHv4iWJxnFGanyRILknD7KrXhghS85lRf84ZT1lnbRf01f8bgjccluhGedgkB7tqEVcvCS7RPP9pDQ==
   dependencies:
     "@babel/plugin-proposal-class-properties" "^7.1.0"
     "@babel/plugin-transform-runtime" "^7.1.0"
