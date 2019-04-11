@@ -1,7 +1,4 @@
 {
-  "presets": ["@exeto/babel-preset-react"],
-  "plugins": [
-    "react-hot-loader/babel",
-    ["@babel/plugin-proposal-class-properties", { "loose": true }]
-  ]
+  "presets": [["babel-preset-react-app", { "absoluteRuntime": false }]],
+  "plugins": ["react-hot-loader/babel"]
 }
