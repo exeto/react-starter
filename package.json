@@ -17,7 +17,6 @@
   "dependencies": {
     "@hot-loader/react-dom": "^16.8.6",
     "axios": "^0.18.0",
-    "core-js": "^2.6.5",
     "react": "^16.8.6",
     "react-jss": "^8.4.0",
     "react-redux": "^7.0.3",
@@ -45,6 +44,7 @@
     "parcel-plugin-static-files-copy": "^2.0.0",
     "prettier": "^1.17.0",
     "prop-types": "^15.7.2",
+    "react-app-polyfill": "^1.0.1",
     "react-hot-loader": "^4.8.4"
   }
 }
