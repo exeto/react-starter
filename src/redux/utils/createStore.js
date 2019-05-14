@@ -1,40 +1,36 @@
 import { createStore, applyMiddleware, compose, combineReducers } from 'redux';
-import { connectRoutes } from 'redux-first-router';
+import { createRouter } from '@routo/core';
 import createSagaMiddleware from 'redux-saga';
 
 import entitiesReducer from '@/redux/entities/reducer';
 import rootSaga from '@/redux/rootSaga';
-import routes from '@/redux/location/routes';
+import routes from '@/redux/router/routes';
 
 const composeEnhancers =
   process.env.NODE_ENV === 'development'
     ? window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose
     : compose;
 
-export default () => {
-  const { reducer, middleware, enhancer, initialDispatch } = connectRoutes(
-    routes,
-    { initialDispatch: false },
-  );
+const router = createRouter(routes);
 
+export default () => {
   const rootReducer = combineReducers({
     entities: entitiesReducer,
-    location: reducer,
+    router: router.reducer,
   });
 
   const sagaMiddleware = createSagaMiddleware();
-  const middlewares = applyMiddleware(sagaMiddleware, middleware);
-  const enhancers = composeEnhancers(enhancer, middlewares);
+  const middlewares = applyMiddleware(sagaMiddleware, router.middleware);
+  const enhancers = composeEnhancers(middlewares);
   const store = createStore(rootReducer, enhancers);
 
   sagaMiddleware.run(rootSaga);
-  initialDispatch();
 
   if (module.hot) {
     module.hot.accept('@/redux/entities/reducer', () => {
       const newRootReducer = combineReducers({
         entities: require('@/redux/entities/reducer').default,
-        location: reducer,
+        router: router.reducer,
       });
 
       store.replaceReducer(newRootReducer);

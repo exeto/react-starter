@@ -1,8 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { NOT_FOUND } from 'redux-first-router';
+import { NOT_FOUND } from '@routo/core';
 
-import * as types from '@/redux/location/types';
+import * as types from '@/redux/router/types';
 import List from '@/pages/List';
 import Item from '@/pages/Item';
 import NotFound from '@/pages/NotFound';

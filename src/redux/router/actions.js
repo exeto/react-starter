@@ -1,5 +1,5 @@
 import { createAction } from 'redux-actions';
-import { NOT_FOUND } from 'redux-first-router';
+import { NOT_FOUND } from '@routo/core';
 
 import { LIST, ITEM } from './types';
 
