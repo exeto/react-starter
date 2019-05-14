@@ -1,8 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Link from '@/components/Link';
+import Link from '/components/Link';
 
-import { toList } from '@/redux/router/actions';
+import { toList } from '/redux/router/actions';
 
 const Base = ({ classes, children }) => (
   <div className={classes.wrapper}>

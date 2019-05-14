@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import PropTypes from 'prop-types';
 
-import Post from '@/components/Post';
+import Post from '/components/Post';
 
 const Item = ({ id, data, findRecord }) => {
   useEffect(() => {

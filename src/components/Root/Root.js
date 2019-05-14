@@ -3,7 +3,7 @@ import { hot } from 'react-hot-loader';
 import PropTypes from 'prop-types';
 import { Provider } from 'react-redux';
 
-import Router from '@/pages/Router';
+import Router from '/pages/Router';
 
 const Root = ({ store }) => (
   <Provider store={store}>

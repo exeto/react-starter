@@ -1,7 +1,7 @@
 import { takeEvery, put, call, spawn } from 'redux-saga/effects';
 
-import { posts } from '@/api';
-import { toNotFound } from '@/redux/router/actions';
+import { posts } from '/api';
+import { toNotFound } from '/redux/router/actions';
 import { findSuccess, findRecordSuccess } from './actions';
 import { FIND_REQUEST, FIND_RECORD_REQUEST } from './types';
 

@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-import config from '@/config';
+import config from '/config';
 
 const createResource = name => {
   const url = `${config.apiUrl}/${name}`;

@@ -1,6 +1,6 @@
 import { handleActions } from 'redux-actions';
 
-import indexBy from '@/utils/indexBy';
+import indexBy from '/utils/indexBy';
 import { FIND_SUCCESS, FIND_RECORD_SUCCESS } from './types';
 
 const initialState = {};
