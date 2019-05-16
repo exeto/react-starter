@@ -20,6 +20,7 @@
     "@routo/link": "^0.2.0",
     "axios": "^0.18.0",
     "react": "^16.8.6",
+    "react-app-polyfill": "^1.0.1",
     "react-jss": "^8.4.0",
     "react-redux": "^7.0.3",
     "redux": "^4.0.1",
@@ -45,7 +46,6 @@
     "parcel-plugin-static-files-copy": "^2.1.0",
     "prettier": "^1.17.1",
     "prop-types": "^15.7.2",
-    "react-app-polyfill": "^1.0.1",
     "react-hot-loader": "^4.8.5"
   }
 }
