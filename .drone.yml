@@ -1,0 +1,13 @@
+kind: pipeline
+name: default
+
+steps:
+  - name: install
+    image: node:10.15.3-alpine
+    commands:
+      - yarn install
+
+  - name: lint
+    image: node:10.15.3-alpine
+    commands:
+      - yarn lint
