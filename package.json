@@ -18,7 +18,7 @@
     "@hot-loader/react-dom": "^16.8.6",
     "@routo/core": "^0.2.0",
     "@routo/link": "^0.2.0",
-    "axios": "^0.18.0",
+    "axios": "^0.19.0",
     "react": "^16.8.6",
     "react-app-polyfill": "^1.0.1",
     "react-jss": "^8.4.0",
