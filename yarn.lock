@@ -2902,12 +2902,12 @@ eslint-import-resolver-node@^0.3.2:
     debug "^2.6.9"
     resolve "^1.5.0"
 
-eslint-import-resolver-parcel@1.8.4:
-  version "1.8.4"
-  resolved "https://registry.yarnpkg.com/eslint-import-resolver-parcel/-/eslint-import-resolver-parcel-1.8.4.tgz#7116c901c094c0a0ee1aa1c35d573b50d068054f"
-  integrity sha512-Zv6sR33RptUayLhx6UKIEZFGkRCLLIhKOo3hXHq7viYgus3n0nDamNktWgDJFFR58k4KIIy6LgqJtKELvzZLIw==
+eslint-import-resolver-parcel@1.10.0:
+  version "1.10.0"
+  resolved "https://registry.yarnpkg.com/eslint-import-resolver-parcel/-/eslint-import-resolver-parcel-1.10.0.tgz#18b89f3734a827f28a18ac68ad239cc219094444"
+  integrity sha512-0VFV8ougXybjHeRTcxjKwXLLp5GLvYgS25KXTYyg4K8P1NGUeOnmKcHkSu0ScnMO7NxREYBK893Y+bsvaNINXA==
   dependencies:
-    resolve "^1.10.0"
+    resolve "^1.11.1"
 
 eslint-module-utils@^2.4.0:
   version "2.4.0"
@@ -6483,6 +6483,13 @@ resolve@^1.1.5, resolve@^1.10.0, resolve@^1.10.1, resolve@^1.11.0, resolve@^1.3.
   version "1.11.0"
   resolved "https://registry.yarnpkg.com/resolve/-/resolve-1.11.0.tgz#4014870ba296176b86343d50b60f3b50609ce232"
   integrity sha512-WL2pBDjqT6pGUNSUzMw00o4T7If+z4H2x3Gz893WoUQ5KW8Vr9txp00ykiP16VBaZF5+j/OcXJHZ9+PCvdiDKw==
+  dependencies:
+    path-parse "^1.0.6"
+
+resolve@^1.11.1:
+  version "1.12.0"
+  resolved "https://registry.yarnpkg.com/resolve/-/resolve-1.12.0.tgz#3fc644a35c84a48554609ff26ec52b66fa577df6"
+  integrity sha512-B/dOmuoAik5bKcD6s6nXDCjzUKnaDvdkRyAk6rsmsKLipWj4797iothd7jmmUhWTfinVMU+wc56rYKsit2Qy4w==
   dependencies:
     path-parse "^1.0.6"
 

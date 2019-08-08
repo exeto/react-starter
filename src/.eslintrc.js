@@ -23,7 +23,7 @@ module.exports = {
     },
     'import/resolver': {
       parcel: {
-        rootDir: __dirname,
+        rootDir: 'src',
       },
     },
   },
