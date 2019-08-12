@@ -29,7 +29,7 @@
     "@exeto/eslint-config": "^2.0.0",
     "@exeto/eslint-config-react": "^3.0.0",
     "babel-eslint": "^10.0.2",
-    "babel-preset-react-app": "^9.0.0",
+    "babel-preset-react-app": "^9.0.1",
     "eslint": "^5.16.0",
     "eslint-config-prettier": "^6.0.0",
     "eslint-import-resolver-parcel": "1.10.0",
