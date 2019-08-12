@@ -40,7 +40,7 @@
     "husky": "^3.0.3",
     "lint-staged": "^9.2.1",
     "parcel-bundler": "^1.12.3",
-    "parcel-plugin-static-files-copy": "^2.2.0",
+    "parcel-plugin-static-files-copy": "^2.2.1",
     "prettier": "^1.18.2",
     "prop-types": "^15.7.2",
     "react-hot-loader": "^4.12.11"
