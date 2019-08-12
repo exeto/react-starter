@@ -43,6 +43,6 @@
     "parcel-plugin-static-files-copy": "^2.2.0",
     "prettier": "^1.18.2",
     "prop-types": "^15.7.2",
-    "react-hot-loader": "^4.12.10"
+    "react-hot-loader": "^4.12.11"
   }
 }
