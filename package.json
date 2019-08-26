@@ -31,7 +31,7 @@
     "babel-eslint": "^10.0.3",
     "babel-preset-react-app": "^9.0.1",
     "eslint": "^5.16.0",
-    "eslint-config-prettier": "^6.0.0",
+    "eslint-config-prettier": "^6.1.0",
     "eslint-import-resolver-parcel": "1.10.0",
     "eslint-plugin-import": "^2.18.2",
     "eslint-plugin-prettier": "^3.1.0",
