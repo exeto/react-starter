@@ -1,3 +1,3 @@
-import postSaga from './posts/saga';
+import postsSaga from './posts/saga';
 
-export default postSaga;
+export default postsSaga;
