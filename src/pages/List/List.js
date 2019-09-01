@@ -12,7 +12,7 @@ const List = ({ items, find }) => {
 };
 
 List.propTypes = {
-  items: PropTypes.array.isRequired,
+  items: PropTypes.arrayOf(PropTypes.shape({})).isRequired,
   find: PropTypes.func.isRequired,
 };
 

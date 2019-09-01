@@ -17,7 +17,10 @@ const Base = ({ classes, children }) => (
 );
 
 Base.propTypes = {
-  classes: PropTypes.object.isRequired,
+  classes: PropTypes.shape({
+    wrapper: PropTypes.string.isRequired,
+    link: PropTypes.string.isRequired,
+  }).isRequired,
   children: PropTypes.node.isRequired,
 };
 

@@ -1,9 +1,4 @@
-const indexBy = (fn, arr) => {
-  return arr.reduce((result, item) => {
-    result[fn(item)] = item;
-
-    return result;
-  }, {});
-};
+const indexBy = (fn, arr) =>
+  arr.reduce((acc, item) => ({ ...acc, [fn(item)]: item }), {});
 
 export default indexBy;

@@ -13,7 +13,7 @@ const Item = ({ id, data, findRecord }) => {
 
 Item.propTypes = {
   id: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,
-  data: PropTypes.object,
+  data: PropTypes.shape({}),
   findRecord: PropTypes.func.isRequired,
 };
 

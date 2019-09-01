@@ -18,7 +18,8 @@ function* findRecord({ payload: id }) {
     yield put(findRecordSuccess(data));
   } catch (err) {
     if (err.response.status === 404) {
-      return yield put(toNotFound());
+      yield put(toNotFound());
+      return;
     }
 
     throw err;

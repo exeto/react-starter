@@ -17,8 +17,15 @@ const Post = ({ data, classes }) => (
 );
 
 Post.propTypes = {
-  data: PropTypes.object.isRequired,
-  classes: PropTypes.object.isRequired,
+  data: PropTypes.shape({
+    id: PropTypes.number.isRequired,
+    title: PropTypes.string.isRequired,
+    body: PropTypes.string.isRequired,
+  }).isRequired,
+  classes: PropTypes.shape({
+    wrapper: PropTypes.string.isRequired,
+    link: PropTypes.string.isRequired,
+  }).isRequired,
 };
 
 export default Post;
