@@ -1,19 +1,19 @@
 import { takeEvery, put, call, spawn } from 'redux-saga/effects';
 
-import { posts } from '/api';
 import { toNotFound } from '/redux/router/actions';
+import api from './api';
 import { findSuccess, findRecordSuccess } from './actions';
 import { FIND_REQUEST, FIND_RECORD_REQUEST } from './types';
 
 function* find() {
-  const data = yield call(posts.find);
+  const data = yield call(api.find);
 
   yield put(findSuccess(data));
 }
 
 function* findRecord({ payload: id }) {
   try {
-    const data = yield call(posts.findRecord, id);
+    const data = yield call(api.findRecord, id);
 
     yield put(findRecordSuccess(data));
   } catch (err) {

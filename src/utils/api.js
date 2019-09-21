@@ -2,7 +2,7 @@ import axios from 'axios';
 
 import config from '/config';
 
-const createResource = name => {
+export const createApi = name => {
   const url = `${config.apiUrl}/${name}`;
 
   return Object.freeze({
@@ -15,5 +15,3 @@ const createResource = name => {
     },
   });
 };
-
-export default createResource;
