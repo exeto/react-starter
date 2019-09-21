@@ -1,5 +1,6 @@
 import React, { memo } from 'react';
 import PropTypes from 'prop-types';
+import exact from 'prop-types-exact';
 
 import Link from '/components/Link';
 import { toItem } from '/redux/router/actions';
@@ -21,12 +22,12 @@ const Post = ({ data }) => {
   );
 };
 
-Post.propTypes = {
+Post.propTypes = exact({
   data: PropTypes.shape({
     id: PropTypes.number.isRequired,
     title: PropTypes.string.isRequired,
     body: PropTypes.string.isRequired,
   }).isRequired,
-};
+});
 
 export default memo(Post);

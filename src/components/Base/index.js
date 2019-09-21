@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import exact from 'prop-types-exact';
 
 import Link from '/components/Link';
 import { toList } from '/redux/router/actions';
@@ -21,8 +22,8 @@ const Base = ({ children }) => {
   );
 };
 
-Base.propTypes = {
+Base.propTypes = exact({
   children: PropTypes.node.isRequired,
-};
+});
 
 export default Base;
