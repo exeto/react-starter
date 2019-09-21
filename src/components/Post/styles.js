@@ -1,4 +1,6 @@
-export default {
+import { createUseStyles } from 'react-jss';
+
+export const useStyles = createUseStyles({
   wrapper: {
     '&:not(:last-child)': {
       borderBottom: [1, 'dotted', '#ccc'],
@@ -14,4 +16,4 @@ export default {
       textDecoration: 'underline',
     },
   },
-};
+});

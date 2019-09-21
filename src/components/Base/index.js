@@ -1,6 +1,28 @@
-import withStyles from 'react-jss';
+import React from 'react';
+import PropTypes from 'prop-types';
 
-import Base from './Base';
-import styles from './styles';
+import Link from '/components/Link';
+import { toList } from '/redux/router/actions';
+import { useStyles } from './styles';
 
-export default withStyles(styles)(Base);
+const Base = ({ children }) => {
+  const classes = useStyles();
+
+  return (
+    <div className={classes.wrapper}>
+      <h1>
+        <Link className={classes.link} to={toList()}>
+          News
+        </Link>
+      </h1>
+
+      {children}
+    </div>
+  );
+};
+
+Base.propTypes = {
+  children: PropTypes.node.isRequired,
+};
+
+export default Base;

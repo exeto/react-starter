@@ -1,16 +1,16 @@
-import { connect } from 'react-redux';
+import React, { useEffect } from 'react';
 
-import { getPosts } from '/redux/entities/posts/selectors';
-import { find } from '/redux/entities/posts/actions';
-import List from './List';
+import Post from '/components/Post';
+import { useData } from './hooks';
 
-const mapStateToProps = state => ({
-  items: getPosts(state),
-});
+const List = () => {
+  const { find, items } = useData();
 
-const mapDispatchToProps = { find };
+  useEffect(() => {
+    find();
+  }, [find]);
 
-export default connect(
-  mapStateToProps,
-  mapDispatchToProps,
-)(List);
+  return items.map(item => <Post key={item.id} data={item} />);
+};
+
+export default List;

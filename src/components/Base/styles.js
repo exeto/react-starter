@@ -1,4 +1,6 @@
-export default {
+import { createUseStyles } from 'react-jss';
+
+export const useStyles = createUseStyles({
   wrapper: {
     maxWidth: 600,
     margin: [0, 'auto'],
@@ -12,4 +14,4 @@ export default {
     color: '#333',
     textDecoration: 'none',
   },
-};
+});

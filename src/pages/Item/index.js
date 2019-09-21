@@ -1,22 +1,16 @@
-import { connect } from 'react-redux';
+import React, { useEffect } from 'react';
 
-import { getPost } from '/redux/entities/posts/selectors';
-import { findRecord } from '/redux/entities/posts/actions';
-import { getParam } from '/redux/router/selectors';
-import Item from './Item';
+import Post from '/components/Post';
+import { useData } from './hooks';
 
-const mapStateToProps = state => {
-  const id = getParam(state, 'id');
+const Item = () => {
+  const { findRecord, data } = useData();
 
-  return {
-    id,
-    data: getPost(state, id),
-  };
+  useEffect(() => {
+    findRecord();
+  }, [findRecord]);
+
+  return data ? <Post data={data} /> : null;
 };
 
-const mapDispatchToProps = { findRecord };
-
-export default connect(
-  mapStateToProps,
-  mapDispatchToProps,
-)(Item);
+export default Item;
