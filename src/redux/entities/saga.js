@@ -1,3 +1,9 @@
-import postsSaga from './posts/saga';
+import { spawn } from 'redux-saga/effects';
 
-export default postsSaga;
+import posts from './posts/saga';
+
+function* entitiesSaga() {
+  yield spawn(posts);
+}
+
+export default entitiesSaga;

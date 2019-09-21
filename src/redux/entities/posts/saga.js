@@ -2,20 +2,24 @@ import { takeEvery, put, call, spawn } from 'redux-saga/effects';
 
 import { toNotFound } from '/redux/router/actions';
 import api from './api';
-import { findSuccess, findRecordSuccess } from './actions';
-import { FIND_REQUEST, FIND_RECORD_REQUEST } from './types';
+import { findPostsSuccess, findPostSuccess } from './actions';
+import { FIND_POSTS, FIND_POST } from './types';
 
-function* find() {
+function* findPosts() {
   const data = yield call(api.find);
 
-  yield put(findSuccess(data));
+  yield put(findPostsSuccess(data));
 }
 
-function* findRecord({ payload: id }) {
+function* watchFindPosts() {
+  yield takeEvery(FIND_POSTS, findPosts);
+}
+
+function* findPost({ payload: id }) {
   try {
     const data = yield call(api.findRecord, id);
 
-    yield put(findRecordSuccess(data));
+    yield put(findPostSuccess(data));
   } catch (err) {
     if (err.response.status === 404) {
       yield put(toNotFound());
@@ -26,17 +30,13 @@ function* findRecord({ payload: id }) {
   }
 }
 
-function* watchFind() {
-  yield takeEvery(FIND_REQUEST, find);
+function* watchFindPost() {
+  yield takeEvery(FIND_POST, findPost);
 }
 
-function* watchFindRecord() {
-  yield takeEvery(FIND_RECORD_REQUEST, findRecord);
+function* postsSaga() {
+  yield spawn(watchFindPosts);
+  yield spawn(watchFindPost);
 }
 
-function* saga() {
-  yield spawn(watchFind);
-  yield spawn(watchFindRecord);
-}
-
-export default saga;
+export default postsSaga;

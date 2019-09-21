@@ -4,11 +4,11 @@ import Post from '/components/Post';
 import { useData } from './hooks';
 
 const List = () => {
-  const { find, items } = useData();
+  const { findPosts, items } = useData();
 
   useEffect(() => {
-    find();
-  }, [find]);
+    findPosts();
+  }, [findPosts]);
 
   return items.map(item => <Post key={item.id} data={item} />);
 };

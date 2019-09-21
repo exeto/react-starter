@@ -4,11 +4,11 @@ import Post from '/components/Post';
 import { useData } from './hooks';
 
 const Item = () => {
-  const { findRecord, data } = useData();
+  const { findPost, data } = useData();
 
   useEffect(() => {
-    findRecord();
-  }, [findRecord]);
+    findPost();
+  }, [findPost]);
 
   return data ? <Post data={data} /> : null;
 };

@@ -1,16 +1,16 @@
 import { createAction } from 'redux-actions';
 
 import {
-  FIND_REQUEST,
-  FIND_SUCCESS,
-  FIND_RECORD_REQUEST,
-  FIND_RECORD_SUCCESS,
+  FIND_POSTS,
+  FIND_POSTS_SUCCESS,
+  FIND_POST,
+  FIND_POST_SUCCESS,
 } from './types';
 
-export const find = createAction(FIND_REQUEST);
+export const findPosts = createAction(FIND_POSTS);
 
-export const findSuccess = createAction(FIND_SUCCESS);
+export const findPostsSuccess = createAction(FIND_POSTS_SUCCESS);
 
-export const findRecord = createAction(FIND_RECORD_REQUEST);
+export const findPost = createAction(FIND_POST);
 
-export const findRecordSuccess = createAction(FIND_RECORD_SUCCESS);
+export const findPostSuccess = createAction(FIND_POST_SUCCESS);
