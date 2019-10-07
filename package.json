@@ -31,7 +31,7 @@
     "babel-preset-react-app": "^9.0.1",
     "eslint": "^6.5.1",
     "eslint-config-airbnb": "^18.0.1",
-    "eslint-config-prettier": "^6.3.0",
+    "eslint-config-prettier": "^6.4.0",
     "eslint-import-resolver-parcel": "1.10.1",
     "eslint-plugin-import": "^2.18.2",
     "eslint-plugin-jsx-a11y": "^6.2.3",
