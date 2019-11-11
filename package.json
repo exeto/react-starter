@@ -43,6 +43,6 @@
     "parcel-bundler": "^1.12.4",
     "prettier": "^1.18.2",
     "prop-types": "^15.7.2",
-    "react-hot-loader": "^4.12.15"
+    "react-hot-loader": "^4.12.16"
   }
 }
