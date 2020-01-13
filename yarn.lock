@@ -1086,10 +1086,10 @@
     qs "^6.7.0"
     ramda "^0.26.1"
 
-"@routo/link@^0.2.0":
-  version "0.2.0"
-  resolved "https://registry.yarnpkg.com/@routo/link/-/link-0.2.0.tgz#6cd003031d8380978b7877ce51d83462308a393f"
-  integrity sha512-P9jwd9HvcPhstQ1p4RxARtInscYixNzulI279UKBIm/kfnwXAgA8gvnv3lohMKSq/yOsFF6bSHuTzJe2bZzgYw==
+"@routo/link@^0.3.0":
+  version "0.3.0"
+  resolved "https://registry.yarnpkg.com/@routo/link/-/link-0.3.0.tgz#fb47cbfe35ebe9908f8c5817160fd166ef99faf8"
+  integrity sha512-GuRBaIdGq9CJkCWskzGHbm3f1e0J5aA0NGFYkQ0IB6fhs8s5ixDUYPOLiUg5SHoDlq5Vdf8it7A170/9zNFNDw==
   dependencies:
     "@babel/runtime" "^7.4.4"
     prop-types "^15.7.2"
