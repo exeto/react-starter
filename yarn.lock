@@ -2839,10 +2839,10 @@ eslint-import-resolver-node@^0.3.2:
     debug "^2.6.9"
     resolve "^1.5.0"
 
-eslint-import-resolver-parcel@1.10.2:
-  version "1.10.2"
-  resolved "https://registry.yarnpkg.com/eslint-import-resolver-parcel/-/eslint-import-resolver-parcel-1.10.2.tgz#465641d85ce611e7fd6b94a4aa098a8bccf3f2f8"
-  integrity sha512-iID0of0ZE+LZ5omx5bGa30LY0PyXSjYsWlLBaV1cQBIBItMmUrz9t6GniWTzB+itCZUFe15+dCcpoGrVXQIYeQ==
+eslint-import-resolver-parcel@1.10.3:
+  version "1.10.3"
+  resolved "https://registry.yarnpkg.com/eslint-import-resolver-parcel/-/eslint-import-resolver-parcel-1.10.3.tgz#2b73fe6200a1895e0244ac832de742f20cff8927"
+  integrity sha512-KuzOrkYUmc99bkPTFXu+Vys6pEQlkf550Mab3IbMBvgereARLtAxX9YueYgTDBiBq7bnZJmWtmKNF3yRSvs7MA==
   dependencies:
     resolve "^1.15.0"
 
