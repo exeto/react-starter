@@ -17,7 +17,7 @@
     "axios": "^0.19.2",
     "prop-types-exact": "^1.2.0",
     "react": "^16.12.0",
-    "react-app-polyfill": "^1.0.5",
+    "react-app-polyfill": "^1.0.6",
     "react-dom": "^16.12.0",
     "react-jss": "^10.0.3",
     "react-redux": "^7.1.3",
