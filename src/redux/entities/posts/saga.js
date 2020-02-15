@@ -1,6 +1,6 @@
 import { takeEvery, put, call, spawn } from 'redux-saga/effects';
+import { markAsNotFound } from '@routo/redux';
 
-import { toNotFound } from '/redux/router/actions';
 import api from './api';
 import { findPostsSuccess, findPostSuccess } from './actions';
 import { FIND_POSTS, FIND_POST } from './types';
@@ -22,7 +22,7 @@ function* findPost({ payload: id }) {
     yield put(findPostSuccess(data));
   } catch (err) {
     if (err.response.status === 404) {
-      yield put(toNotFound());
+      yield put(markAsNotFound());
       return;
     }
 

@@ -2,11 +2,11 @@ import { LIST, ITEM } from './types';
 
 export default [
   {
-    type: LIST,
+    id: LIST,
     path: '/',
   },
   {
-    type: ITEM,
-    path: '/:id',
+    id: ITEM,
+    path: '/posts/:id',
   },
 ];

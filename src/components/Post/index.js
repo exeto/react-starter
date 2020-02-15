@@ -1,9 +1,9 @@
 import React, { memo } from 'react';
 import PropTypes from 'prop-types';
 import exact from 'prop-types-exact';
+import Link from '@routo/link';
 
-import Link from '/components/Link';
-import { toItem } from '/redux/router/actions';
+import { ITEM } from '/router/types';
 import { useStyles } from './styles';
 
 const Post = ({ data }) => {
@@ -12,7 +12,7 @@ const Post = ({ data }) => {
   return (
     <article className={classes.wrapper}>
       <h2>
-        <Link className={classes.link} to={toItem(data.id)}>
+        <Link to={ITEM} params={{ id: data.id }} className={classes.link}>
           {data.title}
         </Link>
       </h2>

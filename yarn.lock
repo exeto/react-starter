@@ -1079,13 +1079,13 @@
   resolved "https://registry.yarnpkg.com/@redux-saga/types/-/types-1.1.0.tgz#0e81ce56b4883b4b2a3001ebe1ab298b84237204"
   integrity sha512-afmTuJrylUU/0OtqzaRkbyYFFNgCF73Bvel/sw90pvGrWIZ+vyoIJqA6eMSoA6+nb443kTmulmBtC9NerXboNg==
 
-"@routo/core@^0.2.0":
-  version "0.2.0"
-  resolved "https://registry.yarnpkg.com/@routo/core/-/core-0.2.0.tgz#905189eb1fda1054ce900c787b4466e8286f523b"
-  integrity sha512-45xirZkeeoAqucJfVWMYQ8zJnXhqCqQ6XuV1CV8CbkZe5Jq0/t2ebUXXaszx1+T81F1NLaxLGRJ1IDZPGX20fw==
+"@routo/core@^0.3.0":
+  version "0.3.0"
+  resolved "https://registry.yarnpkg.com/@routo/core/-/core-0.3.0.tgz#f33da0093de907eec8d1ad247a62c785b513089a"
+  integrity sha512-Cw3ad0PloC+cTC+polhcfUMPSpH7Mb9sXCuWc+3zUOUfFjoR810MZDc3NtlTNQ8SGTq2kQZfweKWxHtGCN+bAQ==
   dependencies:
     history "^4.7.2"
-    path-to-regexp "^3.0.0"
+    path-to-regexp "^6.1.0"
     qs "^6.7.0"
     ramda "^0.26.1"
 
@@ -5363,10 +5363,10 @@ path-parse@^1.0.6:
   resolved "https://registry.yarnpkg.com/path-parse/-/path-parse-1.0.6.tgz#d62dbb5679405d72c4737ec58600e9ddcf06d24c"
   integrity sha512-GSmOT2EbHrINBf9SR7CDELwlJ8AENk3Qn7OikK4nFYAu3Ote2+JYNVvkpAEQm3/TLNEJFD/xZJjzyxg3KBWOzw==
 
-path-to-regexp@^3.0.0:
-  version "3.1.0"
-  resolved "https://registry.yarnpkg.com/path-to-regexp/-/path-to-regexp-3.1.0.tgz#f45a9cc4dc6331ae8f131e0ce4fde8607f802367"
-  integrity sha512-PtHLisEvUOepjc+sStXxJ/pDV/s5UBTOKWJY2SOz3e6E/iN/jLknY9WL72kTwRrwXDUbZTEAtSnJbz2fF127DA==
+path-to-regexp@^6.1.0:
+  version "6.1.0"
+  resolved "https://registry.yarnpkg.com/path-to-regexp/-/path-to-regexp-6.1.0.tgz#0b18f88b7a0ce0bfae6a25990c909ab86f512427"
+  integrity sha512-h9DqehX3zZZDCEm+xbfU0ZmwCGFCAAraPJWMXJ4+v32NjZJilVg3k1TcKsRgIb8IQ/izZSaydDc1OhJCZvs2Dw==
 
 path-type@^2.0.0:
   version "2.0.0"

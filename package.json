@@ -12,8 +12,10 @@
     "lint": "eslint ."
   },
   "dependencies": {
-    "@routo/core": "^0.2.0",
+    "@routo/core": "^0.3.0",
     "@routo/link": "^0.3.0",
+    "@routo/react": "^0.3.0",
+    "@routo/redux": "^0.3.0",
     "axios": "^0.19.1",
     "prop-types-exact": "^1.2.0",
     "react": "^16.12.0",
