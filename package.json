@@ -41,7 +41,7 @@
     "husky": "^4.2.3",
     "lint-staged": "^10.0.10",
     "parcel-bundler": "^1.12.4",
-    "prettier": "^1.19.1",
+    "prettier": "^2.0.3",
     "prop-types": "^15.7.2",
     "react-hot-loader": "^4.12.16"
   }
