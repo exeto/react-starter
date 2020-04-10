@@ -4,7 +4,7 @@
   "private": true,
   "description": "React Starter",
   "repository": "exeto/react-starter",
-  "author": "Timofey Dergachev <t@exeto.me> (https://exeto.me/en)",
+  "author": "Timofey Dergachev <t@exeto.me> (https://exeto.me)",
   "license": "MIT",
   "scripts": {
     "start": "parcel -p 3000 --no-autoinstall src/index.html",
@@ -12,10 +12,10 @@
     "lint": "eslint ."
   },
   "dependencies": {
-    "@routo/core": "^0.3.0",
-    "@routo/link": "^0.3.0",
-    "@routo/react": "^0.3.0",
-    "@routo/redux": "^0.3.0",
+    "@routo/core": "^0.4.0",
+    "@routo/link": "^0.4.0",
+    "@routo/react": "^0.4.0",
+    "@routo/redux": "^0.4.0",
     "axios": "^0.19.1",
     "prop-types-exact": "^1.2.0",
     "react": "^16.12.0",

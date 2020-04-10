@@ -1079,23 +1079,29 @@
   resolved "https://registry.yarnpkg.com/@redux-saga/types/-/types-1.1.0.tgz#0e81ce56b4883b4b2a3001ebe1ab298b84237204"
   integrity sha512-afmTuJrylUU/0OtqzaRkbyYFFNgCF73Bvel/sw90pvGrWIZ+vyoIJqA6eMSoA6+nb443kTmulmBtC9NerXboNg==
 
-"@routo/core@^0.3.0":
-  version "0.3.0"
-  resolved "https://registry.yarnpkg.com/@routo/core/-/core-0.3.0.tgz#f33da0093de907eec8d1ad247a62c785b513089a"
-  integrity sha512-Cw3ad0PloC+cTC+polhcfUMPSpH7Mb9sXCuWc+3zUOUfFjoR810MZDc3NtlTNQ8SGTq2kQZfweKWxHtGCN+bAQ==
+"@routo/core@^0.4.0":
+  version "0.4.0"
+  resolved "https://registry.yarnpkg.com/@routo/core/-/core-0.4.0.tgz#2aae4c19d51df52616b3df1511b171ddf183defc"
+  integrity sha512-hzVefRcgM+Sx0q0CydmUV8DRxIm2SkJcm0v7DQxqZ0ptCBQqapUVVYXe0dtMcDirmf4pjz93ljEvh201rnijmg==
   dependencies:
-    history "^4.7.2"
+    history "^4.10.1"
     path-to-regexp "^6.1.0"
     qs "^6.7.0"
-    ramda "^0.26.1"
 
-"@routo/link@^0.3.0":
-  version "0.3.0"
-  resolved "https://registry.yarnpkg.com/@routo/link/-/link-0.3.0.tgz#fb47cbfe35ebe9908f8c5817160fd166ef99faf8"
-  integrity sha512-GuRBaIdGq9CJkCWskzGHbm3f1e0J5aA0NGFYkQ0IB6fhs8s5ixDUYPOLiUg5SHoDlq5Vdf8it7A170/9zNFNDw==
-  dependencies:
-    "@babel/runtime" "^7.4.4"
-    prop-types "^15.7.2"
+"@routo/link@^0.4.0":
+  version "0.4.0"
+  resolved "https://registry.yarnpkg.com/@routo/link/-/link-0.4.0.tgz#dc7baa1a4e72cdd1f1d7eebfc7a63552219476d8"
+  integrity sha512-uqB5vWtns8QGyPiTGamjrgvBe5vBKnO554IuVAiSGLkwZhaDmRuWFmyszotSClR7CZeQZ2WIq/BGvNGETv21wg==
+
+"@routo/react@^0.4.0":
+  version "0.4.0"
+  resolved "https://registry.yarnpkg.com/@routo/react/-/react-0.4.0.tgz#fc45e8efbf385df6a8786790434afaab516b1587"
+  integrity sha512-BKtzf2vNWBi35O6CiVeWwqgH0MysRcOO/CyyhIxaI3eByvJ7ONR5mAa7CrDuMp0IJfLZ8x9nExpgYkNHIIbnDw==
+
+"@routo/redux@^0.4.0":
+  version "0.4.0"
+  resolved "https://registry.yarnpkg.com/@routo/redux/-/redux-0.4.0.tgz#331b2c3d93c873a991f9f51e847d9e47a4d0cfa7"
+  integrity sha512-RjywVMbUFrkCA+pQqrW1lNqRZ2aXDesRKOKRLdJFhLhl3OGrHVn7gXsiiLWGy9+ZAl21QgjbR8OxAUqdF1nA2g==
 
 "@samverschueren/stream-to-observable@^0.3.0":
   version "0.3.0"
@@ -3542,7 +3548,7 @@ hex-color-regex@^1.1.0:
   resolved "https://registry.yarnpkg.com/hex-color-regex/-/hex-color-regex-1.1.0.tgz#4c06fccb4602fe2602b3c93df82d7e7dbf1a8a8e"
   integrity sha512-l9sfDFsuqtOqKDsQdqrMRk0U85RZc0RtOR9yPI7mRVOa4FsR/BVnZ0shmQRM96Ji99kYZP/7hn1cedc1+ApsTQ==
 
-history@^4.7.2:
+history@^4.10.1:
   version "4.10.1"
   resolved "https://registry.yarnpkg.com/history/-/history-4.10.1.tgz#33371a65e3a83b267434e2b3f3b1b4c58aad4cf3"
   integrity sha512-36nwAD620w12kuzPAsyINPWJqlNbij+hpK1k9XRloDtym8mxzGYl2c17LnV6IAGB2Dmg4tEa7G7DlawS0+qjew==
@@ -5943,11 +5949,6 @@ raf@^3.4.1:
   integrity sha512-Sq4CW4QhwOHE8ucn6J34MqtZCeWFP2aQSmrlroYgqAV1PjStIhJXxYuTgUIfkEk7zTLjmIjLmU5q+fbD1NnOJA==
   dependencies:
     performance-now "^2.1.0"
-
-ramda@^0.26.1:
-  version "0.26.1"
-  resolved "https://registry.yarnpkg.com/ramda/-/ramda-0.26.1.tgz#8d41351eb8111c55353617fc3bbffad8e4d35d06"
-  integrity sha512-hLWjpy7EnsDBb0p+Z3B7rPi3GDeRG5ZtiI33kJhTt+ORCd38AbAIjB/9zRIUoeTbE/AVX5ZkU7m6bznsvrf8eQ==
 
 randombytes@^2.0.0, randombytes@^2.0.1, randombytes@^2.0.5:
   version "2.1.0"
