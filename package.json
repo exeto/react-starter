@@ -4,7 +4,7 @@
   "private": true,
   "description": "React Starter",
   "repository": "exeto/react-starter",
-  "author": "Timofey Dergachev <t@exeto.me> (https://exeto.me/en)",
+  "author": "Timofey Dergachev <t@exeto.me> (https://exeto.me)",
   "license": "MIT",
   "scripts": {
     "start": "parcel -p 3000 --no-autoinstall src/index.html",
@@ -12,9 +12,11 @@
     "lint": "eslint ."
   },
   "dependencies": {
-    "@routo/core": "^0.2.0",
-    "@routo/link": "^0.3.0",
-    "axios": "^0.19.2",
+    "@routo/core": "^0.4.0",
+    "@routo/link": "^0.4.0",
+    "@routo/react": "^0.4.0",
+    "@routo/redux": "^0.4.0",
+    "axios": "^0.19.1",
     "prop-types-exact": "^1.2.0",
     "react": "^16.13.1",
     "react-app-polyfill": "^1.0.6",
@@ -37,12 +39,12 @@
     "eslint-plugin-jsx-a11y": "^6.2.3",
     "eslint-plugin-prettier": "^3.1.2",
     "eslint-plugin-react": "^7.19.0",
-    "eslint-plugin-react-hooks": "^2.5.1",
-    "husky": "^4.2.3",
-    "lint-staged": "^10.1.2",
+    "eslint-plugin-react-hooks": "^3.0.0",
+    "husky": "^4.2.5",
+    "lint-staged": "^10.1.3",
     "parcel-bundler": "^1.12.4",
-    "prettier": "^1.19.1",
+    "prettier": "^2.0.4",
     "prop-types": "^15.7.2",
-    "react-hot-loader": "^4.12.16"
+    "react-hot-loader": "^4.12.20"
   }
 }

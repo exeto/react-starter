@@ -1,11 +1,12 @@
 import { combineReducers } from 'redux';
+import { createReducer } from '@routo/redux';
 
+import router from '/router';
 import entities from './entities/reducer';
-import router from './router/reducer';
 
 const rootReducer = combineReducers({
   entities,
-  router,
+  router: createReducer(router),
 });
 
 export default rootReducer;

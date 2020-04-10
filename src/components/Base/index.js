@@ -1,9 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import exact from 'prop-types-exact';
+import Link from '@routo/link';
 
-import Link from '/components/Link';
-import { toList } from '/redux/router/actions';
+import { LIST } from '/router/types';
 import { useStyles } from './styles';
 
 const Base = ({ children }) => {
@@ -12,7 +12,7 @@ const Base = ({ children }) => {
   return (
     <div className={classes.wrapper}>
       <h1>
-        <Link className={classes.link} to={toList()}>
+        <Link to={LIST} className={classes.link}>
           News
         </Link>
       </h1>

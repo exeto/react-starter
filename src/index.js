@@ -6,6 +6,7 @@ import { render } from 'react-dom';
 import createStore from './redux/createStore';
 
 const store = createStore();
+
 const root = document.getElementById('root');
 
 const renderApp = () => {

@@ -1,7 +1,8 @@
 import { createStore, applyMiddleware, compose } from 'redux';
 import createSagaMiddleware from 'redux-saga';
+import { createMiddleware as createRoutoMiddleware } from '@routo/redux';
 
-import router from './router/router';
+import router from '/router';
 import rootReducer from './rootReducer';
 import rootSaga from './rootSaga';
 
@@ -12,7 +13,8 @@ const composeEnhancers =
 
 export default () => {
   const sagaMiddleware = createSagaMiddleware();
-  const middlewares = applyMiddleware(sagaMiddleware, router.middleware);
+  const routoMiddleware = createRoutoMiddleware(router);
+  const middlewares = applyMiddleware(sagaMiddleware, routoMiddleware);
   const enhancers = composeEnhancers(middlewares);
   const store = createStore(rootReducer, enhancers);
 
