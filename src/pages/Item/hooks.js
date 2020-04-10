@@ -13,6 +13,6 @@ export const useData = () => {
   return {
     id,
     findPost: useCallback(() => dispatch(findPost(id)), [dispatch, id]),
-    data: useSelector(state => getPost(state, id)),
+    data: useSelector((state) => getPost(state, id)),
   };
 };

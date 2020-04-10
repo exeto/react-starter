@@ -10,7 +10,7 @@ const List = () => {
     findPosts();
   }, [findPosts]);
 
-  return items.map(item => <Post key={item.id} data={item} />);
+  return items.map((item) => <Post key={item.id} data={item} />);
 };
 
 export default List;

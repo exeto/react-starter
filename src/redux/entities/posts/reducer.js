@@ -8,7 +8,7 @@ const initialState = {};
 const reducerMap = {
   [FIND_POSTS_SUCCESS]: (state, { payload }) => ({
     ...state,
-    ...indexBy(item => item.id, payload),
+    ...indexBy((item) => item.id, payload),
   }),
 
   [FIND_POST_SUCCESS]: (state, { payload }) => ({
