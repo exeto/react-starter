@@ -1,13 +1,19 @@
+---
 kind: pipeline
+type: docker
 name: default
 
 steps:
   - name: install
-    image: node:10.15.3-alpine
+    image: node:12.16.2-alpine
     commands:
       - yarn install
 
   - name: lint
-    image: node:10.15.3-alpine
+    image: node:12.16.2-alpine
     commands:
       - yarn lint
+
+---
+kind: signature
+hmac: 1f7f92892cb4f0175d74dbb0e4a6d4b515d3480714ee9e7fe204abda68e377bc

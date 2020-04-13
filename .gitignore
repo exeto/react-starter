@@ -16,5 +16,8 @@ package-lock.json
 .vscode/
 
 # OTHER
-/.cache/
-/dist/
+/build/
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
