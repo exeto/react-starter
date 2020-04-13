@@ -1,0 +1,30 @@
+{
+  "root": true,
+  "extends": [
+    "eslint:recommended",
+    "google",
+    "react-app",
+    "plugin:prettier/recommended",
+    "prettier/@typescript-eslint"
+  ],
+  "parserOptions": {
+    "sourceType": "script"
+  },
+  "rules": {
+    "strict": ["error", "global"]
+  },
+  "overrides": [
+    {
+      "files": ["**/*.ts?(x)"],
+      "parserOptions": {
+        "sourceType": "module"
+      }
+    },
+    {
+      "files": ["**/*.d.ts"],
+      "rules": {
+        "spaced-comment": "off"
+      }
+    }
+  ]
+}
