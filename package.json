@@ -37,7 +37,7 @@
     "react-redux": "^7.2.0"
   },
   "devDependencies": {
-    "@types/react": "^16.9.34",
+    "@types/react": "^16.9.35",
     "@types/react-dom": "^16.9.8",
     "@types/react-redux": "^7.1.8",
     "eslint-config-google": "^0.14.0",
