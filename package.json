@@ -28,7 +28,7 @@
     "@routo/core": "^0.5.0",
     "@routo/link": "^0.5.0",
     "@routo/react": "^0.5.0",
-    "@routo/redux": "^0.5.0",
+    "@routo/redux": "^0.6.0",
     "axios": "^0.19.1",
     "react": "^16.13.1",
     "react-app-polyfill": "^1.0.6",
