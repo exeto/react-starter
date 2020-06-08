@@ -1253,10 +1253,10 @@
   resolved "https://registry.yarnpkg.com/@routo/link/-/link-0.5.0.tgz#3ad50126c325f34e973bfc18ff5732dd0b6e6580"
   integrity sha512-4hivAsys/bDEs90DIXflafdnoC4r2oxUF2Am/j8veSXYd4at33cRU7m8QdzS5ZbekkIW4t7S/yP/qu6kBZgd6g==
 
-"@routo/react@^0.5.0":
-  version "0.5.0"
-  resolved "https://registry.yarnpkg.com/@routo/react/-/react-0.5.0.tgz#f31f5594145d700fe2779f1171b4f01611bcc10e"
-  integrity sha512-toDRkotKOpTmd0oZZVAP16bxir5DxMc3g1GPfW+ktHLyTOFuEAzBAyxd35UeAFscHw7UzMjoBnhx2/wrYTIzyA==
+"@routo/react@^0.6.0":
+  version "0.6.0"
+  resolved "https://registry.yarnpkg.com/@routo/react/-/react-0.6.0.tgz#c6f91a294ddc90a77e2076076d8f1821f2292a94"
+  integrity sha512-HcVtfQ2j6XngFpKQzylDRRJote1NLll8J7+rGMgT0Pb0T7drOrcoOFbW45Eirj+w4+/eRFLFKY/I0wHZSa2E7A==
 
 "@routo/redux@^0.5.0":
   version "0.5.0"
