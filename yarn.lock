@@ -1239,10 +1239,10 @@
     redux-thunk "^2.3.0"
     reselect "^4.0.0"
 
-"@routo/core@^0.5.0":
-  version "0.5.0"
-  resolved "https://registry.yarnpkg.com/@routo/core/-/core-0.5.0.tgz#c0209c4ba38934336aeb5fae76bcd0394ecb39ee"
-  integrity sha512-DLo1VBDHm+lnHifXK0/EQKUanRqDPqFz9uXOQAH90AqyhCX4vwMUEhgN1g8MF0t4aZIKvg2kxG6Q0CJKg15Z8w==
+"@routo/core@^0.6.0":
+  version "0.6.0"
+  resolved "https://registry.yarnpkg.com/@routo/core/-/core-0.6.0.tgz#6564ce335e3b8a6e62747077c55bd85938d0dc82"
+  integrity sha512-KNidV/pzmLtNHady0yVKfQJwm5f3Fm8AEerLxjl0/M9Xd2WmHidntSTcFWQHQweBqOFd18QowR8fgDf8p1JEEA==
   dependencies:
     history "^4.10.1"
     path-to-regexp "^6.1.0"
