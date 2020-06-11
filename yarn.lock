@@ -1239,24 +1239,24 @@
     redux-thunk "^2.3.0"
     reselect "^4.0.0"
 
-"@routo/core@^0.6.0":
-  version "0.6.0"
-  resolved "https://registry.yarnpkg.com/@routo/core/-/core-0.6.0.tgz#6564ce335e3b8a6e62747077c55bd85938d0dc82"
-  integrity sha512-KNidV/pzmLtNHady0yVKfQJwm5f3Fm8AEerLxjl0/M9Xd2WmHidntSTcFWQHQweBqOFd18QowR8fgDf8p1JEEA==
+"@routo/core@^0.6.1":
+  version "0.6.1"
+  resolved "https://registry.yarnpkg.com/@routo/core/-/core-0.6.1.tgz#25fc1818bac4f6df0bc9b17137a294a5f9cb5205"
+  integrity sha512-MdnNE7JYxsb8lAmiDOsqhZJvMu5FmQjNVGjAu7hfRiIwUBZD1kUwwsZ4ivTgy7sq1BTfHmuOF3yoUN/KjKIHFg==
   dependencies:
     history "^4.10.1"
     path-to-regexp "^6.1.0"
     qs "^6.7.0"
 
-"@routo/link@^0.5.0":
-  version "0.5.0"
-  resolved "https://registry.yarnpkg.com/@routo/link/-/link-0.5.0.tgz#3ad50126c325f34e973bfc18ff5732dd0b6e6580"
-  integrity sha512-4hivAsys/bDEs90DIXflafdnoC4r2oxUF2Am/j8veSXYd4at33cRU7m8QdzS5ZbekkIW4t7S/yP/qu6kBZgd6g==
+"@routo/link@^0.6.1":
+  version "0.6.1"
+  resolved "https://registry.yarnpkg.com/@routo/link/-/link-0.6.1.tgz#79a8be4cd8b33fb3356b73705b7546a7db8346a3"
+  integrity sha512-cXgQJjb12mozBlPKYlYU9e2xSQP/piIM1Rz40tlnQn9KKNQ0kqmslXHusRH45EB+tkSLywVZN2k9tOE954TeOQ==
 
-"@routo/react@^0.5.0":
-  version "0.5.0"
-  resolved "https://registry.yarnpkg.com/@routo/react/-/react-0.5.0.tgz#f31f5594145d700fe2779f1171b4f01611bcc10e"
-  integrity sha512-toDRkotKOpTmd0oZZVAP16bxir5DxMc3g1GPfW+ktHLyTOFuEAzBAyxd35UeAFscHw7UzMjoBnhx2/wrYTIzyA==
+"@routo/react@^0.6.1":
+  version "0.6.1"
+  resolved "https://registry.yarnpkg.com/@routo/react/-/react-0.6.1.tgz#5f75363faacb6e233845527a21091498b35cf3a3"
+  integrity sha512-yc2QRDog9CDQmqs2QLwuMZZ/Wt0U2ocNLSwTYemapDt05VUsEgt0vMUcmOPpxR8616ibnn0J+JLliDNrgeU6OA==
 
 "@routo/redux@^0.6.0":
   version "0.6.0"
