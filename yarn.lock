@@ -1258,10 +1258,10 @@
   resolved "https://registry.yarnpkg.com/@routo/react/-/react-0.6.1.tgz#5f75363faacb6e233845527a21091498b35cf3a3"
   integrity sha512-yc2QRDog9CDQmqs2QLwuMZZ/Wt0U2ocNLSwTYemapDt05VUsEgt0vMUcmOPpxR8616ibnn0J+JLliDNrgeU6OA==
 
-"@routo/redux@^0.6.0":
-  version "0.6.0"
-  resolved "https://registry.yarnpkg.com/@routo/redux/-/redux-0.6.0.tgz#d0421fccc4af05227b66124396a2f7cab47e0067"
-  integrity sha512-l1zXKotvB55X5lRcT7azZEPLxi81odh4EfGP3VJFQLBHDXIiXW0WdBFGOaf81yl3QHzh5BfiKyqjmcbdV8/8kA==
+"@routo/redux@^0.6.1":
+  version "0.6.1"
+  resolved "https://registry.yarnpkg.com/@routo/redux/-/redux-0.6.1.tgz#5344cf43179a7fdb15a45f90448d6bbfa3ea1600"
+  integrity sha512-b3eH62xklwdWkM66Lga9E62OEsMTN7j/o8tFeSZ43bqGE9Lh2FiZU1GYrQfxKyV2YV3W99RsHyfKkzAEh3dS0A==
 
 "@svgr/babel-plugin-add-jsx-attribute@^4.2.0":
   version "4.2.0"
