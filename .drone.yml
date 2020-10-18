@@ -9,11 +9,11 @@ steps:
     commands:
       - yarn install
 
-  - name: lint
+  - name: test
     image: node:12.16.2-alpine
     commands:
-      - yarn lint
+      - yarn test
 
 ---
 kind: signature
-hmac: 1f7f92892cb4f0175d74dbb0e4a6d4b515d3480714ee9e7fe204abda68e377bc
+hmac: 68f3b10ac7462fe82cefb1d4ad09e449882cb679549d150e35ae6a9797f49792

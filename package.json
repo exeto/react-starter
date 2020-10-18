@@ -9,7 +9,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "lint": "eslint --ext .js,.ts,.tsx ."
+    "test": "eslint --ext .js,.ts,.tsx ."
   },
   "browserslist": {
     "production": [

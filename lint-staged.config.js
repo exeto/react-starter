@@ -1,6 +1,6 @@
 'use strict';
 
 module.exports = {
-  '**/*.js': ['eslint --fix'],
+  '**/*.{js,ts,tsx}': ['eslint --fix'],
   '**/*.{json,html,md}': ['prettier --write'],
 };
