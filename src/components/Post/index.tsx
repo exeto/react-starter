@@ -1,5 +1,5 @@
 import React, { memo, FC } from 'react';
-import Link from '@routo/link';
+import { Link } from '@routo/link';
 
 import { ITEM } from 'src/router/ids';
 import { useStyles } from './styles';
