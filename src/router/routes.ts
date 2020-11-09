@@ -1,6 +1,6 @@
 import { LIST, ITEM } from './ids';
 
-export default [
+const routes = [
   {
     id: LIST,
     path: '/',
@@ -10,3 +10,5 @@ export default [
     path: '/posts/:id',
   },
 ];
+
+export default routes;

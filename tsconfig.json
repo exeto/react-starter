@@ -15,6 +15,7 @@
     "isolatedModules": true,
     "noEmit": true,
     "jsx": "react",
-    "allowJs": false
+    "allowJs": false,
+    "noFallthroughCasesInSwitch": true
   }
 }

@@ -1,5 +1,5 @@
 import React, { FC } from 'react';
-import Link from '@routo/link';
+import { Link } from '@routo/link';
 
 import { LIST } from 'src/router/ids';
 import { useStyles } from './styles';
