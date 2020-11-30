@@ -24,7 +24,7 @@
     ]
   },
   "dependencies": {
-    "@reduxjs/toolkit": "^1.4.0",
+    "@reduxjs/toolkit": "^1.5.0",
     "@routo/core": "^0.6.1",
     "@routo/link": "^0.6.1",
     "@routo/react": "^0.6.1",
