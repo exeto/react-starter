@@ -5,15 +5,11 @@ name: default
 
 steps:
   - name: install
-    image: node:12.16.2-alpine
+    image: node:16.13.1-alpine
     commands:
       - yarn install
 
   - name: test
-    image: node:12.16.2-alpine
+    image: node:16.13.1-alpine
     commands:
       - yarn test
-
----
-kind: signature
-hmac: 68f3b10ac7462fe82cefb1d4ad09e449882cb679549d150e35ae6a9797f49792
