@@ -1,19 +1,18 @@
 # react-starter
 
-> React Starter
-
 ## Install
 
 ```sh
 $ git clone https://github.com/exeto/react-starter.git
-$ cd react-starter && yarn install
+$ cd react-starter
+$ npm install
 ```
 
 ## Usage
 
 ```bash
 # Development
-$ yarn start
+$ yarn dev
 
 # Build
 $ yarn build

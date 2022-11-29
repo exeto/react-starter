@@ -1,7 +1,12 @@
-import { render } from 'react-dom';
+import './index.css';
 
-const Root = () => <h1>Hello, world!</h1>;
+import React from 'react';
+import { createRoot } from 'react-dom/client';
 
-const root = document.getElementById('root');
+import { App } from './App';
 
-render(<Root />, root);
+createRoot(document.querySelector('#root')!).render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
+);

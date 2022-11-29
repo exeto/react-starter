@@ -9,16 +9,16 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
 
       - name: Setup Node.js
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v3
         with:
-          node-version: 16.13.1
-          cache: yarn
+          node-version: 18.12.1
+          cache: npm
 
       - name: Install dependencies
-        run: yarn install --immutable
+        run: npm clean-install
 
-      - name: Test
-        run: yarn test
+      - name: Lint
+        run: npm run lint
